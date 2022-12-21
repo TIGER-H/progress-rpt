@@ -1,6 +1,6 @@
 import { describe, it, expect, jest } from "@jest/globals";
 
-import CSVToNDJSON from "../../src/streamComponents/csvtondjson.mjs";
+import CSVToNDJSON from "../../src/streamComponents/csvtondjson.js";
 
 /**
  * id, name -> headers
@@ -8,7 +8,7 @@ import CSVToNDJSON from "../../src/streamComponents/csvtondjson.mjs";
  * ...
  */
 
-describe("CSV to NDJSON test suite", () => {
+describe("CSV to NDJSON Test Suite", () => {
   it("given a csv string it should return a ndjson string", () => {
     const csvString = `id,name,age\n01,foo,20\n`;
     const csvToJSON = new CSVToNDJSON({
